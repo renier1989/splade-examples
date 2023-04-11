@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
 
 Route::middleware('splade')->group(function () {
     // Registers routes to support the interactive components...
@@ -28,6 +29,12 @@ Route::middleware('splade')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+        // RUTAS PARA POSTS
+        Route::get('/posts', [PostController::class, 'index'])->name('post.index');
+        Route::get('/post/{post}', [PostController::class, 'show'])->name('post.show');
+        Route::get('/post/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
+        Route::post('/post/{post}',[PostController::class, 'update'])->name('post.update');
     });
 
     require __DIR__.'/auth.php';

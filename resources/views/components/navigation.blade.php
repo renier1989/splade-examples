@@ -3,7 +3,7 @@
         <!-- Primary Navigation Menu -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
-                <div class="flex">
+                <div class="flex w-full">
                     <!-- Logo -->
                     <div class="shrink-0 flex items-center">
                         <a href="{{ route('home') }}">
@@ -12,64 +12,75 @@
                     </div>
 
                     <!-- Navigation Links -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        @auth
-                        <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                            {{ __('Dashboard') }}
-                        </x-nav-link>
-                        @endauth
-                        <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                            {{ __('Home') }}
-                        </x-nav-link>
-
-                        <x-nav-link href="{{ route('docs') }}" :active="request()->routeIs('docs')">
-                            {{ __('Documentation') }}
-                        </x-nav-link>
-                        
-                        @if (Route::has('login'))
-                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                            @auth
-                            <div class="hidden sm:flex sm:items-center sm:ml-6">
-                                <x-dropdown placement="bottom-end">
-                                    <x-slot name="trigger">
-                                        <button class="flex items-center text-sm font-medium text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
-                                            <div>{{ Auth::user()->name }}</div>
-            
-                                            <div class="ml-1">
-                                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                                </svg>
-                                            </div>
-                                        </button>
-                                    </x-slot>
-            
-                                    <x-slot name="content">
-                                        <x-dropdown-link :href="route('profile.edit')">
-                                            {{ __('Profile') }}
-                                        </x-dropdown-link>
-            
-                                        <!-- Authentication -->
-                                        <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
-            
-                                            <x-dropdown-link as="a" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                                                {{ __('Log Out') }}
-                                            </x-dropdown-link>
-                                        </form>
-                                    </x-slot>
-                                </x-dropdown>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex w-full">
+                        <div class="flex flex-row items-center justify-between w-full">
+                            <div class="space-x-3">
+                                @auth
+                                <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                                    {{ __('Dashboard') }}
+                                </x-nav-link>
+                                @endauth
+                                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                                    {{ __('Home') }}
+                                </x-nav-link>
+        
+                                <x-nav-link href="{{ route('docs') }}" :active="request()->routeIs('docs')">
+                                    {{ __('Documentation') }}
+                                </x-nav-link>
+                                @auth
+                                <x-nav-link href="{{ route('post.index') }}" :active="request()->routeIs('post.index')">
+                                    {{ __('Posts') }}
+                                </x-nav-link>
+                                @endauth
                             </div>
-                            @else
-                            <Link href="{{ route('login') }}"
-                                class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</Link>
-
-                            @if (Route::has('register'))
-                            <Link href="{{ route('register') }}"
-                                class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</Link>
-                            @endif
-                            @endauth
+                            <div>
+                                @if (Route::has('login'))
+                                <div class="hidden px-6 py-4 sm:block">
+                                    @auth
+                                    <div class="hidden sm:flex sm:items-center sm:ml-6">
+                                        <x-dropdown placement="bottom-end">
+                                            <x-slot name="trigger">
+                                                <button class="flex items-center text-sm font-medium text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out">
+                                                    <div>{{ Auth::user()->name }}</div>
+                    
+                                                    <div class="ml-1">
+                                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                            </x-slot>
+                    
+                                            <x-slot name="content">
+                                                <x-dropdown-link :href="route('profile.edit')">
+                                                    {{ __('Profile') }}
+                                                </x-dropdown-link>
+                    
+                                                <!-- Authentication -->
+                                                <form method="POST" action="{{ route('logout') }}">
+                                                    @csrf
+                    
+                                                    <x-dropdown-link as="a" :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
+                                                        {{ __('Log Out') }}
+                                                    </x-dropdown-link>
+                                                </form>
+                                            </x-slot>
+                                        </x-dropdown>
+                                    </div>
+                                    @else
+                                    <Link href="{{ route('login') }}"
+                                        class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</Link>
+        
+                                    @if (Route::has('register'))
+                                    <Link href="{{ route('register') }}"
+                                        class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</Link>
+                                    @endif
+                                    @endauth
+                                </div>
+                                @endif
+                            </div>
                         </div>
-                        @endif
+                        
                     </div>
                 </div>
 
