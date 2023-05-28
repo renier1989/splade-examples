@@ -14,7 +14,10 @@
                         </x-slot>
                         <x-slot name="content">
                             <x-dropdown-link href="{{route('post.show',$post->id)}}">
-                                Editar
+                                Details
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{route('post.edit',$post->id)}}">
+                                Edit
                             </x-dropdown-link>
                         </x-slot>
                     </x-dropdown>
