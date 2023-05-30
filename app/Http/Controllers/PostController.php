@@ -86,10 +86,10 @@ class PostController extends Controller
         $data = $request->validate([
             'titulo' => ['required', 'string'],
             'contenido' => ['required'],
-            'agree_terms' => ['required','boolean'],
-            'dat_of_birth' => ['required'],
-            'roles' => ['required','array', 'min:2'],
-            'roless' => ['required','array', 'min:2'],
+            // 'agree_terms' => ['required','boolean'],
+            // 'dat_of_birth' => ['required'],
+            // 'roles' => ['required','array', 'min:2'],
+            // 'roless' => ['required','array', 'min:2'],
         ]);
 
         $post->update($data);

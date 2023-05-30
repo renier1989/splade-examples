@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c55c4468839640c48290e8f5f00d8e7b",
+    "content-hash": "ff462fd550e034031b4ecca5e1da6f47",
     "packages": [
         {
             "name": "brick/math",
@@ -365,6 +365,118 @@
                 }
             ],
             "time": "2022-09-10T18:51:20+00:00"
+        },
+        {
+            "name": "efureev/laravel-trees",
+            "version": "v3.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/efureev/laravel-trees.git",
+                "reference": "c540e6d4139be0f1500e59ab6d738f22d7f1d714"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/efureev/laravel-trees/zipball/c540e6d4139be0f1500e59ab6d738f22d7f1d714",
+                "reference": "c540e6d4139be0f1500e59ab6d738f22d7f1d714",
+                "shasum": ""
+            },
+            "require": {
+                "efureev/support": "^4.16",
+                "illuminate/database": "^8.8|^9.25|^10.0",
+                "illuminate/events": "^8.80|^9.25|^10.0",
+                "php": "^8.0|^8.1|^8.2"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.20",
+                "orchestra/testbench": "^6.17|^7.22|8.0",
+                "phpunit/phpunit": "^9.5|^10.0",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/var-dumper": "^5.2|^6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fureev\\Trees\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Fureev",
+                    "email": "fureev@gmail.com"
+                }
+            ],
+            "description": "Multi-Tree structures for Laravel",
+            "keywords": [
+                "laravel",
+                "multi-tree",
+                "package",
+                "php",
+                "tree"
+            ],
+            "support": {
+                "issues": "https://github.com/efureev/laravel-trees/issues",
+                "source": "https://github.com/efureev/laravel-trees/tree/v3.8.0"
+            },
+            "time": "2023-03-20T11:07:45+00:00"
+        },
+        {
+            "name": "efureev/support",
+            "version": "v4.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/efureev/php-support.git",
+                "reference": "0320fcf2b171e54d35bac2b0c207fc79e1552c5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/efureev/php-support/zipball/0320fcf2b171e54d35bac2b0c207fc79e1552c5f",
+                "reference": "0320fcf2b171e54d35bac2b0c207fc79e1552c5f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^8.1|^8.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10.14",
+                "phpunit/phpunit": "^10.1.1",
+                "squizlabs/php_codesniffer": "^3.7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Global/base.php"
+                ],
+                "psr-4": {
+                    "Php\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene Fureev",
+                    "homepage": "https://github.com/efureev"
+                }
+            ],
+            "description": "PHP Support Package is a collection of useful functions and snippets",
+            "keywords": [
+                "helpers",
+                "php",
+                "support",
+                "utility"
+            ],
+            "support": {
+                "issues": "https://github.com/efureev/php-support/issues",
+                "source": "https://github.com/efureev/php-support/tree/v4.19.0"
+            },
+            "time": "2023-04-21T08:16:17+00:00"
         },
         {
             "name": "egulias/email-validator",

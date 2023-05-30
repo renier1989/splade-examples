@@ -28,7 +28,7 @@
 
             <x-splade-checkboxes name="roless" label="Roles Example form an Array from the Controller" :options="$roles" />
 
-            <x-splade-input name="dat_of_birth" label="Day of Birth" date time range />    
+            <x-splade-input name="dat_of_birth" label="Day of Birth" date />    
 
 
             <x-splade-submit />

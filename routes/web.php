@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TreesController;
+use App\Http\Controllers\SpladeController;
 use App\Http\Controllers\ProfileController;
 
 Route::middleware('splade')->group(function () {
@@ -35,7 +37,14 @@ Route::middleware('splade')->group(function () {
         Route::get('/post/{post}', [PostController::class, 'show'])->name('post.show');
         Route::get('/post/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
         Route::post('/post/{post}',[PostController::class, 'update'])->name('post.update');
+
+        //ejemplo de trees
+        Route::get('/trees', [TreesController::class, 'index'])->name('trees.index');
     });
+
+
+    /**  PRACTICANDO ALGUNAS FUNCIONALIDADES CON EL CONTROLADOR */
+    Route::get('practicando', [SpladeController::class, 'index'])->name('practicando');
 
     require __DIR__.'/auth.php';
 });

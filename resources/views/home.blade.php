@@ -75,4 +75,5 @@
             </x-splade-data>
         </div>
     </x-panel>
+    
 </x-layout>

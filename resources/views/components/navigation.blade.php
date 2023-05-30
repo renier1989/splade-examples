@@ -31,7 +31,13 @@
                                 <x-nav-link href="{{ route('post.index') }}" :active="request()->routeIs('post.index')">
                                     {{ __('Posts') }}
                                 </x-nav-link>
+                                <x-nav-link href="{{ route('trees.index') }}" :active="request()->routeIs('trees.index')">
+                                    {{ __('Trees') }}
+                                </x-nav-link>
                                 @endauth
+                                <x-nav-link href="{{ route('practicando') }}" :active="request()->routeIs('practicando')">
+                                    {{ __('Practices') }}
+                                </x-nav-link>
                             </div>
                             <div>
                                 @if (Route::has('login'))
