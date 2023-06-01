@@ -89,6 +89,53 @@
             </nav>
         </div>
 
+        <div class="border-b-[1px] border-slate-300 mb-3">&nbsp;</div> {{-- Divisor --}}
+
+        <div>
+            <p class="text-2xl"> Defer data</p>
+            <div>
+                <x-splade-defer url="https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?">
+                    <p v-show="processing">Loading Data......</p>
+                    <p v-if="response.data" v-text="response.data.message"></p>
+                    <button class="p-1 text-white rounded-md bg-green-500" @click.prevent="reload">New Qoute</button>
+                </x-splade-defer>
+            </div>
+        </div>
+
+        <div>
+            <span> Transition</span>
+            <div>
+                <x-splade-toggle>
+                    <button class="p-2 text-white rounded-md bg-green-500" @click.prevent="toggle">Toggle message</button>
+                    <x-splade-transition 
+                    show="toggled"
+                    enter="transition-opacity duration-75"
+                    enter-from="opacity-0"
+                    enter-to="opacity-100"
+                    leave="transition-opacity duration-150"
+                    leave-from="opacity-100"
+                    leave-to="opacity-0"
+                    >
+                        Welcome!
+                    </x-splade-transition >
+                </x-splade-toggle>
+                
+            </div>
+        </div>
+
+
+        <div class="border-b-[1px] border-slate-300 mb-3">&nbsp;</div> {{-- Divisor --}}
+
+        <div>
+            <p class="text-2xl">Custom VUE component</p>
+            <div>
+                <Counter v-slot="{count, increase,decrease}">
+                    <button class="p-2 text-white rounded-md bg-red-500" @click="decrease">-</button>
+                    <button class="p-2 text-white rounded-md bg-blue-500" v-text="count"></button>
+                    <button class="p-2 text-white rounded-md bg-green-500" @click="increase">+</button>
+                </Counter>
+            </div>
+        </div>
         
     </x-panel>
 </x-layout>

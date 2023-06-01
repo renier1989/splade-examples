@@ -6,6 +6,7 @@ use App\Models\Post;
 use ProtoneMedia\Splade\Facades\SEO;
 use ProtoneMedia\Splade\Facades\Toast;
 use ProtoneMedia\Splade\Facades\Splade;
+use ProtoneMedia\Splade\Facades\Animation;
 
 class SpladeController extends Controller
 {
@@ -26,6 +27,8 @@ class SpladeController extends Controller
         Splade::share('variable_compartida','DATA COMPARTIDA DIRECTA DESDE EL CONTROLADOR');
 
         $some_posts = Post::latest()->limit(3)->get();
+
+
 
         return view('practicando', [
             'posts' => Splade::onLazy(fn()=>$some_posts)
