@@ -37,6 +37,12 @@ Route::middleware('splade')->group(function () {
         Route::get('/post/{post}', [PostController::class, 'show'])->name('post.show');
         Route::get('/post/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
         Route::post('/post/{post}',[PostController::class, 'update'])->name('post.update');
+        
+        Route::get('/postsv2', [PostController::class, 'indexv2'])->name('post.indexv2');
+        Route::get('/postsv2/add', [PostController::class, 'add'])->name('post.add');
+        Route::post('/postsv2/store', [PostController::class, 'storev2'])->name('post.storev2');
+        Route::get('/postsv2/{post}/edit', [PostController::class, 'editv2'])->name('post.editv2');
+        Route::patch('/postsv2/{post}/update', [PostController::class, 'updatev2'])->name('post.updatev2');
 
         //ejemplo de trees
         Route::get('/trees', [TreesController::class, 'index'])->name('trees.index');

@@ -1,10 +1,18 @@
 <x-layout>
     <x-slot name="header">
         {{__('Posts')}}
+        <div class="text-blue-600 underline ">
+            <Link href="{{ route('post.indexv2') }}" >
+                Table Post 2 
+            </Link>
+            
+        </div>
     </x-slot>
 
     <x-panel>
-
+        <div>
+            Esta tabla es creada con spladeTable desde el controlador
+        </div>
         <div>
             <x-splade-table :for="$posts" >
                 <x-splade-cell action as="$post">
