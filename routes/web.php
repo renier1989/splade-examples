@@ -45,6 +45,8 @@ Route::middleware('splade')->group(function () {
 
     /**  PRACTICANDO ALGUNAS FUNCIONALIDADES CON EL CONTROLADOR */
     Route::get('practicando', [SpladeController::class, 'index'])->name('practicando');
+    Route::get('practicando/files', [SpladeController::class, 'index_files'])->name('practicando.files');
+    Route::post('upload-file', [SpladeController::class, 'uploadFile'])->name('upload-file');
 
     require __DIR__.'/auth.php';
 });

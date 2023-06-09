@@ -1,6 +1,15 @@
 <x-layout>
     
     <x-panel>
+
+        <div>
+            <a href="{{route('practicando.files')}}" class="p-2 rounded-md text-white bg-green-500">
+                Practicas con Files
+            </a>
+        </div>
+    
+
+
         <x-splade-state>
             <p>
                 Esto es un contenido que esta siendo compartido desde el controller:
@@ -57,7 +66,7 @@
             <p class="text-2xl">
                 Remember
             </p>
-            <x-splade-data remember="menu" default="{tab1:false, tab2:false,tabs3:false}">
+            <x-splade-data remember="menu" local-storage default="{tab1:false, tab2:false,tabs3:false}">
                 <div class="flex gap-2">
                     <button class="p-3 rounded-md text-white bg-green-800" @click.prevent="data.tab1 = !data.tab1"> Tab1</button >
                     <button class="p-3 rounded-md text-white bg-green-800" @click.prevent="data.tab2 = !data.tab2"> Tab2</button>

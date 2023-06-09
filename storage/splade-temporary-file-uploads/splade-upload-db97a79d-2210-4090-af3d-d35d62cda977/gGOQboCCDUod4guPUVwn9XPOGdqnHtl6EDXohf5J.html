@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="9UFHHdbIIjRJiB5Ry4LNjO2gh45jwtQRN99atBRy">
+
+        <title>Laravel</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+
+        <!-- Scripts -->
+        <script type="module" src="http://192.168.56.1:5173/@vite/client"></script><script type="module" src="http://192.168.56.1:5173/resources/js/app.js"></script>        <title>Laravel</title>
+<link rel="canonical" href="http://splade-examples.test/practicando/files?fetch=https%3A%2F%2F3.bp.blogspot.com%2F-xXi6Ka0rvDc%2FUaWrAOq7SvI%2FAAAAAAAACRk%2FeVqHtWL8NhM%2Fs1600%2FDeep%252BSpace%252BImages-712306.jpg">
+<meta name="description" content="Splade provides a super easy way to build Single Page Applications (SPA) using standard Laravel Blade templates, enhanced with renderless Vue 3 components." />
+<meta name="keywords" content="Laravel, Splade" />
+    </head>
+    <body class="font-sans antialiased">
+        <div id="app" data-components="&quot;&lt;SpladeConfirm\n    default-title=\&quot;Are you sure you want to continue?\&quot;\n    default-text=\&quot;\&quot;\n    default-password-text=\&quot;Please confirm your password before continuing\&quot;\n    default-confirm-button=\&quot;Confirm\&quot;\n    default-cancel-button=\&quot;Cancel\&quot;\n    confirm-password-route=\&quot;http:\/\/splade-examples.test\/_splade\/confirmPassword\&quot;\n    confirmed-password-status-route=\&quot;http:\/\/splade-examples.test\/_splade\/confirmPassword\&quot;\n&gt;\n    &lt;template #default=\&quot;confirm\&quot;&gt;\n        &lt;SpladeTransition #default=\&quot;{ TransitionRoot, TransitionChild }\&quot;&gt;\n    &lt;component\n        v-bind:unmount=\&quot;true\&quot; v-bind:appear=\&quot;false\&quot; v-bind:show=\&quot;confirm.isOpen\&quot; v-bind:is=\&quot;TransitionRoot\&quot; v-bind:leave-to=\&quot;true ? &amp;#039;opacity-0 scale-95&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave-from=\&quot;true ? &amp;#039;opacity-100 scale-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave=\&quot;true ? &amp;#039;transition transform ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-to=\&quot;true ? &amp;#039;opacity-100 scale-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-from=\&quot;true ? &amp;#039;opacity-0 scale-95&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter=\&quot;true ? &amp;#039;transition transform ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot;\n    &gt;\n        &lt;SpladeDialog #default=\&quot;{ Dialog, DialogPanel, isActivated: isActivatedJBkFQUGocfbpmqH8 }\&quot;&gt;\n    &lt;component\n        v-on:close=\&quot;confirm.setIsOpen(false)\&quot; class=\&quot;relative z-30\&quot; v-bind:unmount=\&quot;true\&quot; v-bind:is=\&quot;Dialog\&quot;\n    &gt;\n        &lt;SpladeTransition #default=\&quot;{ TransitionRoot, TransitionChild }\&quot;&gt;\n    &lt;component\n        v-bind:unmount=\&quot;true\&quot; class=\&quot;fixed z-30 inset-0 bg-black\/75\&quot; v-bind:appear=\&quot;false\&quot; v-bind:is=\&quot;TransitionChild\&quot; v-bind:leave-to=\&quot;true ? &amp;#039;opacity-0&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave-from=\&quot;true ? &amp;#039;opacity-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave=\&quot;true ? &amp;#039;transition ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-to=\&quot;true ? &amp;#039;opacity-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-from=\&quot;true ? &amp;#039;opacity-0&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter=\&quot;true ? &amp;#039;transition ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot;\n    &gt;\n        \n    &lt;\/component&gt;\n&lt;\/SpladeTransition&gt;\n                &lt;div class=\&quot;fixed z-40 inset-0 overflow-y-auto\&quot;&gt;\n                    &lt;div class=\&quot;flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0\&quot;&gt;\n                        &lt;SpladeTransition #default=\&quot;{ TransitionRoot, TransitionChild }\&quot;&gt;\n    &lt;component\n        v-on:after-leave=\&quot;confirm.emitClose\&quot; v-bind:unmount=\&quot;true\&quot; v-bind:appear=\&quot;false\&quot; v-bind:is=\&quot;TransitionChild\&quot; v-bind:leave-to=\&quot;true ? &amp;#039;opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave-from=\&quot;true ? &amp;#039;opacity-100 translate-y-0 sm:scale-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave=\&quot;true ? &amp;#039;transition transform ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-to=\&quot;true ? &amp;#039;opacity-100 translate-y-0 sm:scale-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-from=\&quot;true ? &amp;#039;opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter=\&quot;true ? &amp;#039;transition transform ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot;\n    &gt;\n        &lt;SpladeDialog #default=\&quot;{ Dialog, DialogPanel, isActivated: isActivatedJRv6mhAVx0rEk9ZF }\&quot;&gt;\n    &lt;component\n        v-bind:unmount=\&quot;true\&quot; class=\&quot;relative bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full sm:p-6\&quot; v-bind:is=\&quot;DialogPanel\&quot;\n    &gt;\n        &lt;div class=\&quot;sm:flex sm:items-start\&quot;&gt;\n                                    &lt;div class=\&quot;text-center sm:mt-0 sm:text-left\&quot;&gt;\n                                        &lt;h3 class=\&quot;text-lg leading-6 font-medium text-gray-900\&quot; v-text=\&quot;confirm.title\&quot; \/&gt;\n                                        &lt;div class=\&quot;mt-2\&quot; v-if=\&quot;confirm.text\&quot;&gt;\n                                            &lt;p class=\&quot;text-sm text-gray-500\&quot; v-text=\&quot;confirm.text\&quot; \/&gt;\n                                        &lt;\/div&gt;\n\n                                        &lt;div class=\&quot;mt-2 flex rounded-md border border-gray-300 shadow-sm\&quot; v-if=\&quot;confirm.confirmPassword\&quot;&gt;\n                                            &lt;input\n                                                type=\&quot;password\&quot;\n                                                name=\&quot;password\&quot;\n                                                placeholder=\&quot;Password\&quot;\n                                                v-on:change=\&quot;confirm.setPassword($event.target.value)\&quot;\n                                                class=\&quot;rounded-md block w-full border-0 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-50 disabled:bg-gray-50 disabled:cursor-not-allowed\&quot;\n                                                @keyup.enter=\&quot;confirm.confirm\&quot;\n                                                :disabled=\&quot;confirm.submitting\&quot;\n                                            \/&gt;\n                                        &lt;\/div&gt;\n\n                                        &lt;p v-if=\&quot;confirm.passwordError\&quot; v-text=\&quot;confirm.passwordError\&quot; class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; \/&gt;\n                                    &lt;\/div&gt;\n                                &lt;\/div&gt;\n\n                                &lt;div class=\&quot;mt-5 sm:mt-4 sm:flex\&quot;&gt;\n                                    &lt;button\n                                        dusk=\&quot;splade-confirm-confirm\&quot;\n                                        type=\&quot;button\&quot;\n                                        class=\&quot;inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:text-sm\&quot;\n                                        :class=\&quot;{\n                                            &#039;bg-indigo-500 hover:bg-indigo-700 focus:ring-indigo-500&#039;: !confirm.confirmDanger,\n                                            &#039;bg-red-500 hover:bg-red-700 focus:ring-red-500&#039;: confirm.confirmDanger\n                                        }\&quot;\n                                        @click.prevent=\&quot;confirm.confirm\&quot;\n                                        :disabled=\&quot;confirm.submitting\&quot;\n                                        v-text=\&quot;confirm.confirmButton\&quot;\n                                    \/&gt;\n                                    &lt;button\n                                        dusk=\&quot;splade-confirm-cancel\&quot;\n                                        type=\&quot;button\&quot;\n                                        class=\&quot;mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 px-4 py-2 bg-white text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm\&quot;\n                                        @click.prevent=\&quot;confirm.cancel\&quot;\n                                        :disabled=\&quot;confirm.submitting\&quot;\n                                        v-text=\&quot;confirm.cancelButton\&quot;\n                                    \/&gt;\n                                &lt;\/div&gt;\n    &lt;\/component&gt;\n&lt;\/SpladeDialog&gt;\n    &lt;\/component&gt;\n&lt;\/SpladeTransition&gt;                    &lt;\/div&gt;\n                &lt;\/div&gt;\n    &lt;\/component&gt;\n&lt;\/SpladeDialog&gt;\n    &lt;\/component&gt;\n&lt;\/SpladeTransition&gt;    &lt;\/template&gt;\n&lt;\/SpladeConfirm&gt;&lt;SpladeToasts&gt;\n    &lt;template #default=\&quot;toasts\&quot;&gt;\n        &lt;SpladeTransition #default=\&quot;{ TransitionRoot, TransitionChild }\&quot;&gt;\n    &lt;component\n        v-bind:unmount=\&quot;true\&quot; class=\&quot;fixed z-30 inset-0 bg-black\/75\&quot; v-bind:appear=\&quot;true\&quot; v-bind:show=\&quot;toasts.hasBackdrop\&quot; v-bind:is=\&quot;TransitionRoot\&quot; v-bind:leave-to=\&quot;true ? &amp;#039;opacity-0&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave-from=\&quot;true ? &amp;#039;opacity-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:leave=\&quot;true ? &amp;#039;transition ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-to=\&quot;true ? &amp;#039;opacity-100&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter-from=\&quot;true ? &amp;#039;opacity-0&amp;#039; : &amp;#039;&amp;#039;\&quot; v-bind:enter=\&quot;true ? &amp;#039;transition ease-in-out duration-300&amp;#039; : &amp;#039;&amp;#039;\&quot;\n    &gt;\n        \n    &lt;\/component&gt;\n&lt;\/SpladeTransition&gt;\n        &lt;div class=\&quot;fixed z-40 inset-0 grid grid-cols-3 grid-flow-row-3 pointer-events-none\&quot;&gt;\n            &lt;div v-for=\&quot;position in toasts.positions\&quot; class=\&quot;relative\&quot;&gt;\n                &lt;div :class=\&quot;{\n                    &#039;absolute w-full h-full flex flex-col p-4 space-y-4&#039;: true,\n                    &#039;items-start justify-start&#039;: position == &#039;left-top&#039;,\n                    &#039;items-center justify-start&#039;: position == &#039;center-top&#039;,\n                    &#039;items-end justify-start&#039;: position == &#039;right-top&#039;,\n                    &#039;items-start justify-center&#039;: position == &#039;left-center&#039;,\n                    &#039;items-center justify-center&#039;: position == &#039;center-center&#039;,\n                    &#039;items-end justify-center&#039;: position == &#039;right-center&#039;,\n                    &#039;items-start justify-end&#039;: position == &#039;left-bottom&#039;,\n                    &#039;items-center justify-end&#039;: position == &#039;center-bottom&#039;,\n                    &#039;items-end justify-end&#039;: position == &#039;right-bottom&#039;\n                }\&quot;&gt;\n                    &lt;template v-for=\&quot;(toast, toastKey) in toasts.toasts\&quot;&gt;\n                        &lt;template v-if=\&quot;toast.position == position &amp;&amp; !toast.dismissed &amp;&amp; toast.html\&quot;&gt;\n                            &lt;SpladeRender\n                                @dismiss=\&quot;toasts.dismissToast(toastKey)\&quot;\n                                :toast-key=\&quot;toastKey\&quot;\n                                :key=\&quot;toastKey\&quot;\n                                :html=\&quot;toast.html\&quot;\n                            \/&gt;\n                        &lt;\/template&gt;\n                    &lt;\/template&gt;\n                &lt;\/div&gt;\n            &lt;\/div&gt;\n        &lt;\/div&gt;\n    &lt;\/template&gt;\n&lt;\/SpladeToasts&gt;\n&quot;" data-html="&quot;&lt;div class=\&quot;min-h-screen bg-gray-100\&quot;&gt;\n    &lt;SpladeData \n     :default=\&quot;{ open: false }\&quot;  :remember=\&quot;false\&quot; :local-storage=\&quot;false\&quot;&gt;\n            &lt;template #default=\&quot;data\&quot;&gt;\n            &lt;nav class=\&quot;bg-white border-b border-gray-100\&quot;&gt;\n        &lt;!-- Primary Navigation Menu --&gt;\n        &lt;div class=\&quot;max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\&quot;&gt;\n            &lt;div class=\&quot;flex justify-between h-16\&quot;&gt;\n                &lt;div class=\&quot;flex w-full\&quot;&gt;\n                    &lt;!-- Logo --&gt;\n                    &lt;div class=\&quot;shrink-0 flex items-center\&quot;&gt;\n                        &lt;a href=\&quot;http:\/\/splade-examples.test\&quot;&gt;\n                            &lt;svg xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot; xml:space=\&quot;preserve\&quot; viewBox=\&quot;517.95 321.25 77.43 77.4\&quot; class=\&quot;block h-9 w-auto\&quot;&gt;\n    &lt;path style=\&quot;fill:#b940a2;stroke-width:.46399999\&quot; d=\&quot;M556.66 322.09c-.007 0-2.837 5.648-6.288 12.551a8640.808 8640.808 0 0 0-6.276 12.564c0 .007 5.654.013 12.564.013s12.564-.006 12.564-.013c0-.007-2.824-5.66-6.275-12.564a4042.98 4042.98 0 0 0-6.288-12.551zm0 27.062h-13.544l-6.772 13.544-6.772 13.544h54.176l-6.774-13.544-6.77-13.544zm0 29.023h-28.056l-5.32 10.639-5.322 10.644h77.395l-5.322-10.644-5.322-10.639z\&quot; transform=\&quot;translate(0 -.821)\&quot;&gt;&lt;\/path&gt;\n&lt;\/svg&gt;                        &lt;\/a&gt;\n                    &lt;\/div&gt;\n\n                    &lt;!-- Navigation Links --&gt;\n                    &lt;div class=\&quot;hidden space-x-8 sm:-my-px sm:ml-10 sm:flex w-full\&quot;&gt;\n                        &lt;div class=\&quot;flex flex-row items-center justify-between w-full\&quot;&gt;\n                            &lt;div class=\&quot;space-x-3\&quot;&gt;\n                                                                &lt;Link class=\&quot;inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out\&quot; href=\&quot;http:\/\/splade-examples.test\&quot;&gt;\n    Home\n&lt;\/Link&gt;\n        \n                                &lt;Link class=\&quot;inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out\&quot; href=\&quot;http:\/\/splade-examples.test\/docs\&quot;&gt;\n    Documentation\n&lt;\/Link&gt;\n                                                                &lt;Link class=\&quot;inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out\&quot; href=\&quot;http:\/\/splade-examples.test\/practicando\&quot;&gt;\n    Practices\n&lt;\/Link&gt;\n                            &lt;\/div&gt;\n                            &lt;div&gt;\n                                                                &lt;div class=\&quot;hidden px-6 py-4 sm:block\&quot;&gt;\n                                                                        &lt;Link href=\&quot;http:\/\/splade-examples.test\/login\&quot;\n                                        class=\&quot;text-sm text-gray-700 dark:text-gray-500 underline\&quot;&gt;Log in&lt;\/Link&gt;\n        \n                                                                        &lt;Link href=\&quot;http:\/\/splade-examples.test\/register\&quot;\n                                        class=\&quot;ml-4 text-sm text-gray-700 dark:text-gray-500 underline\&quot;&gt;Register&lt;\/Link&gt;\n                                                                                                        &lt;\/div&gt;\n                                                            &lt;\/div&gt;\n                        &lt;\/div&gt;\n                        \n                    &lt;\/div&gt;\n                &lt;\/div&gt;\n\n                &lt;!-- Hamburger --&gt;\n                &lt;div class=\&quot;-mr-2 flex items-center sm:hidden\&quot;&gt;\n                    &lt;button @click=\&quot;data.open = ! data.open\&quot;\n                        class=\&quot;inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition\&quot;&gt;\n                        &lt;svg class=\&quot;h-6 w-6\&quot; stroke=\&quot;currentColor\&quot; fill=\&quot;none\&quot; viewBox=\&quot;0 0 24 24\&quot;&gt;\n                            &lt;path v-bind:class=\&quot;{&#039;hidden&#039;: data.open, &#039;inline-flex&#039;: ! data.open }\&quot;\n                                stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot; stroke-width=\&quot;2\&quot;\n                                d=\&quot;M4 6h16M4 12h16M4 18h16\&quot; \/&gt;\n                            &lt;path v-bind:class=\&quot;{&#039;hidden&#039;: ! data.open, &#039;inline-flex&#039;: data.open }\&quot;\n                                stroke-linecap=\&quot;round\&quot; stroke-linejoin=\&quot;round\&quot; stroke-width=\&quot;2\&quot;\n                                d=\&quot;M6 18L18 6M6 6l12 12\&quot; \/&gt;\n                        &lt;\/svg&gt;\n                    &lt;\/button&gt;\n                &lt;\/div&gt;\n            &lt;\/div&gt;\n        &lt;\/div&gt;\n\n        &lt;!-- Responsive Navigation Menu --&gt;\n        &lt;div v-bind:class=\&quot;{&#039;block&#039;: data.open, &#039;hidden&#039;: ! data.open }\&quot; class=\&quot;sm:hidden\&quot;&gt;\n            &lt;div class=\&quot;pt-2 pb-3 space-y-1\&quot;&gt;\n                &lt;Link class=\&quot;block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out\&quot; href=\&quot;http:\/\/splade-examples.test\&quot;&gt;\n    Home\n&lt;\/Link&gt;\n\n                &lt;Link class=\&quot;block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out\&quot; href=\&quot;http:\/\/splade-examples.test\/docs\&quot;&gt;\n    Documentation\n&lt;\/Link&gt;\n                            &lt;\/div&gt;\n        &lt;\/div&gt;\n    &lt;\/nav&gt;\n        &lt;\/template&gt;\n    &lt;\/SpladeData&gt;\n    &lt;!-- Page Heading --&gt;\n    \n    &lt;!-- Page Content --&gt;\n    &lt;main&gt;\n        &lt;div class=\&quot;py-6\&quot;&gt;\n    &lt;div class=\&quot;max-w-7xl mx-auto sm:px-6 lg:px-8\&quot;&gt;\n        &lt;div class=\&quot;bg-white overflow-hidden shadow-xl sm:rounded-lg\&quot;&gt;\n            &lt;div class=\&quot;p-6 sm:px-20 bg-white border-b border-gray-200\&quot;&gt;\n                &lt;p class=\&quot;text-2xl\&quot;&gt;\r\n            Vista para practicar Files\r\n        &lt;\/p&gt;\r\n        &lt;div class=\&quot;border-b-[1px] border-slate-300 mb-5\&quot;&gt;&amp;nbsp;&lt;\/div&gt; \r\n        &lt;div&gt;\r\n            &lt;label for=\&quot;\&quot;&gt;Multiple Files&lt;\/label&gt;\r\n            &lt;SpladeForm label=\&quot;Multiple Documents\&quot;\n     :default=\&quot;JSON.parse(&#039;{\\u0022documents\\u0022:[]}&#039;)\&quot;     :scroll-on-error=\&quot;true\&quot;\n    :splade-id=\&quot;&#039;DWxYdRdSrcFUDk0O&#039;\&quot;\n    :submit-on-change=\&quot;false\&quot;\n    :escape-validation-messages=\&quot;true\&quot;\n    :preserve-scroll=\&quot;false\&quot;\n    :background=\&quot;false\&quot;\n    :debounce=\&quot;0\&quot;\n    :accept-header=\&quot;&#039;text\\\/html, application\\\/xhtml+xml&#039;\&quot;\n&gt;\n    &lt;template #default=\&quot;form\&quot;&gt;\n        &lt;form data-splade-id=\&quot;DWxYdRdSrcFUDk0O\&quot; v-bind=\&quot;form.$attrs\&quot; @submit.prevent=\&quot;form.submit\&quot; method=\&quot;POST\&quot;&gt;\n            &lt;fieldset v-bind:disabled=\&quot;form.processing\&quot; &gt;\n                &lt;SpladeFile\n    :form=\&quot;form\&quot;\n    :field=\&quot;&#039;documents&#039;\&quot;\n    :multiple=\&quot;true\&quot;\n    :placeholder=\&quot;&#039;Browse...&#039;\&quot;\n    :filepond=\&quot;false\&quot;\n    :js-filepond-options=\&quot;{}\&quot;\n    :server=\&quot;false\&quot;\n    :preview=\&quot;false\&quot;\n    :accept=\&quot;[]\&quot;\n    :existing-suffix=\&quot;&#039;_existing&#039;\&quot;\n    :order-suffix=\&quot;&#039;_order&#039;\&quot;\n    :min-file-size=\&quot;false\&quot;\n    :max-file-size=\&quot;false\&quot;\n    :min-image-width=\&quot;false\&quot;\n    :max-image-width=\&quot;false\&quot;\n    :min-image-height=\&quot;false\&quot;\n    :max-image-height=\&quot;false\&quot;\n    :min-image-resolution=\&quot;false\&quot;\n    :max-image-resolution=\&quot;false\&quot;\n    v-on:start-uploading=\&quot;form.$startUploading\&quot;\n    v-on:stop-uploading=\&quot;form.$stopUploading\&quot;\n    :dusk=\&quot;null\&quot;\n    \n&gt;\n    &lt;template #default=\&quot;file\&quot;&gt;\n        &lt;label class=\&quot;block\&quot;&gt;\n            \n                            &lt;a @submit.prevent\n                    class=\&quot;inline-block py-2 px-3 rounded-md border border-gray-300 shadow-sm bg-white hover:bg-gray-100 relative cursor-pointer font-medium text-gray-700 text-sm focus:outline-none focus:ring focus:ring-opacity-50 focus:border-indigo-300 focus:ring-indigo-200 text-center\&quot;&gt;\n\n                                            Choose Multiple Files\n                    \n                    &lt;input @change=\&quot;file.handleFileInput\&quot; name=\&quot;documents[]\&quot; multiple=\&quot;multiple\&quot; type=\&quot;file\&quot; data-validation-key=\&quot;documents\&quot; class=\&quot;invisible absolute inset-0 w-full h-full disabled:opacity-50\&quot;\n                                            \/&gt;\n                &lt;\/a&gt;\n            \n                    &lt;\/label&gt;\n\n                    &lt;div class=\&quot;mt-2 text-sm italic\&quot; v-if=\&quot;file.filenames.length &gt; 0\&quot;&gt;\n                &lt;p v-for=\&quot;(filename, key) in file.filenames\&quot; v-bind:key=\&quot;key\&quot; v-text=\&quot;filename\&quot; \/&gt;\n            &lt;\/div&gt;\n        \n        &lt;p class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; v-if=\&quot;form.hasError(&#039;documents&#039;)\&quot; v-bind=\&quot;form.$errorAttributes(&#039;documents&#039;)\&quot; \/&gt;    &lt;\/template&gt;\n&lt;\/SpladeFile&gt;\n            &lt;\/fieldset&gt;\n        &lt;\/form&gt;\n    &lt;\/template&gt;\n&lt;\/SpladeForm&gt;        &lt;\/div&gt;\r\n        \r\n        &lt;div class=\&quot;border-b-[1px] border-slate-300 mb-5\&quot;&gt;&amp;nbsp;&lt;\/div&gt; \r\n\r\n        &lt;div&gt;\r\n            &lt;label for=\&quot;\&quot;&gt;Select an image and showing its previwe&lt;\/label&gt;\r\n            &lt;SpladeForm \n     :default=\&quot;{}\&quot;     :scroll-on-error=\&quot;true\&quot;\n    :splade-id=\&quot;&#039;DOj0uvyTgwnQSPal&#039;\&quot;\n    :submit-on-change=\&quot;false\&quot;\n    :escape-validation-messages=\&quot;true\&quot;\n    :preserve-scroll=\&quot;false\&quot;\n    :background=\&quot;false\&quot;\n    :debounce=\&quot;0\&quot;\n    :accept-header=\&quot;&#039;text\\\/html, application\\\/xhtml+xml&#039;\&quot;\n&gt;\n    &lt;template #default=\&quot;form\&quot;&gt;\n        &lt;form data-splade-id=\&quot;DOj0uvyTgwnQSPal\&quot; v-bind=\&quot;form.$attrs\&quot; @submit.prevent=\&quot;form.submit\&quot; method=\&quot;POST\&quot;&gt;\n            &lt;fieldset v-bind:disabled=\&quot;form.processing\&quot; &gt;\n                &lt;SpladeFile\n    :form=\&quot;form\&quot;\n    :field=\&quot;&#039;avatar&#039;\&quot;\n    :multiple=\&quot;false\&quot;\n    :placeholder=\&quot;&#039;Browse...&#039;\&quot;\n    :filepond=\&quot;false\&quot;\n    :js-filepond-options=\&quot;{}\&quot;\n    :server=\&quot;false\&quot;\n    :preview=\&quot;false\&quot;\n    :accept=\&quot;[]\&quot;\n    :existing-suffix=\&quot;&#039;_existing&#039;\&quot;\n    :order-suffix=\&quot;&#039;_order&#039;\&quot;\n    :min-file-size=\&quot;false\&quot;\n    :max-file-size=\&quot;false\&quot;\n    :min-image-width=\&quot;false\&quot;\n    :max-image-width=\&quot;false\&quot;\n    :min-image-height=\&quot;false\&quot;\n    :max-image-height=\&quot;false\&quot;\n    :min-image-resolution=\&quot;false\&quot;\n    :max-image-resolution=\&quot;false\&quot;\n    v-on:start-uploading=\&quot;form.$startUploading\&quot;\n    v-on:stop-uploading=\&quot;form.$stopUploading\&quot;\n    :dusk=\&quot;null\&quot;\n    \n&gt;\n    &lt;template #default=\&quot;file\&quot;&gt;\n        &lt;label class=\&quot;block\&quot;&gt;\n            \n                            &lt;a @submit.prevent\n                    class=\&quot;inline-block py-2 px-3 rounded-md border border-gray-300 shadow-sm bg-white hover:bg-gray-100 relative cursor-pointer font-medium text-gray-700 text-sm focus:outline-none focus:ring focus:ring-opacity-50 focus:border-indigo-300 focus:ring-indigo-200 text-center\&quot;&gt;\n\n                                            Select an Image..\n                    \n                    &lt;input @change=\&quot;file.handleFileInput\&quot; name=\&quot;avatar\&quot; type=\&quot;file\&quot; data-validation-key=\&quot;avatar\&quot; class=\&quot;invisible absolute inset-0 w-full h-full disabled:opacity-50\&quot;\n                                            \/&gt;\n                &lt;\/a&gt;\n            \n                    &lt;\/label&gt;\n\n        \n        &lt;p class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; v-if=\&quot;form.hasError(&#039;avatar&#039;)\&quot; v-bind=\&quot;form.$errorAttributes(&#039;avatar&#039;)\&quot; \/&gt;    &lt;\/template&gt;\n&lt;\/SpladeFile&gt;                &lt;img class=\&quot;w-[50%]\&quot; v-if=\&quot;form.avatar\&quot; :src=\&quot;form.$fileAsUrl(&#039;avatar&#039;)\&quot; \/&gt;\n            &lt;\/fieldset&gt;\n        &lt;\/form&gt;\n    &lt;\/template&gt;\n&lt;\/SpladeForm&gt;        &lt;\/div&gt;\r\n\r\n        &lt;div class=\&quot;border-b-[1px] border-slate-300 mb-5\&quot;&gt;&amp;nbsp;&lt;\/div&gt; \r\n\r\n        &lt;div&gt;\r\n            &lt;label for=\&quot;\&quot;&gt;A more stylize file selector&lt;\/label&gt;\r\n            &lt;SpladeForm \n     :default=\&quot;{}\&quot;     :scroll-on-error=\&quot;true\&quot;\n    :splade-id=\&quot;&#039;rdRWzvG4W48t5OzF&#039;\&quot;\n    :submit-on-change=\&quot;false\&quot;\n    :escape-validation-messages=\&quot;true\&quot;\n    :preserve-scroll=\&quot;false\&quot;\n    :background=\&quot;false\&quot;\n    :debounce=\&quot;0\&quot;\n    :accept-header=\&quot;&#039;text\\\/html, application\\\/xhtml+xml&#039;\&quot;\n&gt;\n    &lt;template #default=\&quot;form\&quot;&gt;\n        &lt;form data-splade-id=\&quot;rdRWzvG4W48t5OzF\&quot; v-bind=\&quot;form.$attrs\&quot; @submit.prevent=\&quot;form.submit\&quot; method=\&quot;POST\&quot;&gt;\n            &lt;fieldset v-bind:disabled=\&quot;form.processing\&quot; &gt;\n                &lt;SpladeFile\n    :form=\&quot;form\&quot;\n    :field=\&quot;&#039;avatar2&#039;\&quot;\n    :multiple=\&quot;false\&quot;\n    :placeholder=\&quot;&#039;You can Drop or select a file by clicking here&#039;\&quot;\n    :filepond=\&quot;JSON.parse(&#039;{\\u0022allowReorder\\u0022:true,\\u0022itemInsertLocation\\u0022:\\u0022after\\u0022,\\u0022labelIdle\\u0022:\\u0022You can Drop or select a file by clicking here\\u0022,\\u0022multiple\\u0022:false,\\u0022name\\u0022:\\u0022file\\u0022}&#039;)\&quot;\n    :js-filepond-options=\&quot;{}\&quot;\n    :server=\&quot;false\&quot;\n    :preview=\&quot;false\&quot;\n    :accept=\&quot;[]\&quot;\n    :existing-suffix=\&quot;&#039;_existing&#039;\&quot;\n    :order-suffix=\&quot;&#039;_order&#039;\&quot;\n    :min-file-size=\&quot;false\&quot;\n    :max-file-size=\&quot;false\&quot;\n    :min-image-width=\&quot;false\&quot;\n    :max-image-width=\&quot;false\&quot;\n    :min-image-height=\&quot;false\&quot;\n    :max-image-height=\&quot;false\&quot;\n    :min-image-resolution=\&quot;false\&quot;\n    :max-image-resolution=\&quot;false\&quot;\n    v-on:start-uploading=\&quot;form.$startUploading\&quot;\n    v-on:stop-uploading=\&quot;form.$stopUploading\&quot;\n    :dusk=\&quot;null\&quot;\n    \n&gt;\n    &lt;template #default=\&quot;file\&quot;&gt;\n        &lt;label class=\&quot;block\&quot;&gt;\n            \n                            &lt;input name=\&quot;avatar2\&quot; type=\&quot;file\&quot; data-validation-key=\&quot;avatar2\&quot;\n                \/&gt;\n            \n                    &lt;\/label&gt;\n\n        \n        &lt;p class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; v-if=\&quot;form.hasError(&#039;avatar2&#039;)\&quot; v-bind=\&quot;form.$errorAttributes(&#039;avatar2&#039;)\&quot; \/&gt;    &lt;\/template&gt;\n&lt;\/SpladeFile&gt;\n            &lt;\/fieldset&gt;\n        &lt;\/form&gt;\n    &lt;\/template&gt;\n&lt;\/SpladeForm&gt;        &lt;\/div&gt;\r\n        &lt;div&gt;\r\n            &lt;label for=\&quot;\&quot;&gt;Same as previous but with multiple selection&lt;\/label&gt;\r\n            &lt;SpladeForm \n     :default=\&quot;JSON.parse(&#039;{\\u0022avatars\\u0022:[]}&#039;)\&quot;     :scroll-on-error=\&quot;true\&quot;\n    :splade-id=\&quot;&#039;fRbXf0XBwEKOs51s&#039;\&quot;\n    :submit-on-change=\&quot;false\&quot;\n    :escape-validation-messages=\&quot;true\&quot;\n    :preserve-scroll=\&quot;false\&quot;\n    :background=\&quot;false\&quot;\n    :debounce=\&quot;0\&quot;\n    :accept-header=\&quot;&#039;text\\\/html, application\\\/xhtml+xml&#039;\&quot;\n&gt;\n    &lt;template #default=\&quot;form\&quot;&gt;\n        &lt;form data-splade-id=\&quot;fRbXf0XBwEKOs51s\&quot; v-bind=\&quot;form.$attrs\&quot; @submit.prevent=\&quot;form.submit\&quot; method=\&quot;POST\&quot;&gt;\n            &lt;fieldset v-bind:disabled=\&quot;form.processing\&quot; &gt;\n                &lt;SpladeFile\n    :form=\&quot;form\&quot;\n    :field=\&quot;&#039;avatars&#039;\&quot;\n    :multiple=\&quot;true\&quot;\n    :placeholder=\&quot;&#039;You can Drop or select Multiple files by clicking here&#039;\&quot;\n    :filepond=\&quot;JSON.parse(&#039;{\\u0022allowReorder\\u0022:true,\\u0022itemInsertLocation\\u0022:\\u0022after\\u0022,\\u0022labelIdle\\u0022:\\u0022You can Drop or select Multiple files by clicking here\\u0022,\\u0022multiple\\u0022:true,\\u0022name\\u0022:\\u0022file\\u0022}&#039;)\&quot;\n    :js-filepond-options=\&quot;{}\&quot;\n    :server=\&quot;false\&quot;\n    :preview=\&quot;true\&quot;\n    :accept=\&quot;JSON.parse(&#039;[\\u0022image\\\\\\\/png\\u0022]&#039;)\&quot;\n    :existing-suffix=\&quot;&#039;_existing&#039;\&quot;\n    :order-suffix=\&quot;&#039;_order&#039;\&quot;\n    :min-file-size=\&quot;false\&quot;\n    :max-file-size=\&quot;false\&quot;\n    :min-image-width=\&quot;false\&quot;\n    :max-image-width=\&quot;false\&quot;\n    :min-image-height=\&quot;false\&quot;\n    :max-image-height=\&quot;false\&quot;\n    :min-image-resolution=\&quot;false\&quot;\n    :max-image-resolution=\&quot;false\&quot;\n    v-on:start-uploading=\&quot;form.$startUploading\&quot;\n    v-on:stop-uploading=\&quot;form.$stopUploading\&quot;\n    :dusk=\&quot;null\&quot;\n    \n&gt;\n    &lt;template #default=\&quot;file\&quot;&gt;\n        &lt;label class=\&quot;block\&quot;&gt;\n            \n                            &lt;input name=\&quot;avatars[]\&quot; multiple=\&quot;multiple\&quot; type=\&quot;file\&quot; data-validation-key=\&quot;avatars\&quot;\n                \/&gt;\n            \n                    &lt;\/label&gt;\n\n        \n        &lt;p class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; v-if=\&quot;form.hasError(&#039;avatars&#039;)\&quot; v-bind=\&quot;form.$errorAttributes(&#039;avatars&#039;)\&quot; \/&gt;    &lt;\/template&gt;\n&lt;\/SpladeFile&gt;\n            &lt;\/fieldset&gt;\n        &lt;\/form&gt;\n    &lt;\/template&gt;\n&lt;\/SpladeForm&gt;        &lt;\/div&gt;\r\n\r\n        &lt;div class=\&quot;border-b-[1px] border-slate-300 mb-5\&quot;&gt;&amp;nbsp;&lt;\/div&gt; \r\n        &lt;div&gt;\r\n            &lt;label for=\&quot;\&quot;&gt;Adding files from a remote url&lt;\/label&gt;\r\n            &lt;SpladeForm \n     :default=\&quot;{}\&quot;     :scroll-on-error=\&quot;true\&quot;\n    :splade-id=\&quot;&#039;XqNj9verp8t2DvvS&#039;\&quot;\n    :submit-on-change=\&quot;false\&quot;\n    :escape-validation-messages=\&quot;true\&quot;\n    :preserve-scroll=\&quot;false\&quot;\n    :background=\&quot;false\&quot;\n    :debounce=\&quot;0\&quot;\n    :accept-header=\&quot;&#039;text\\\/html, application\\\/xhtml+xml&#039;\&quot;\n&gt;\n    &lt;template #default=\&quot;form\&quot;&gt;\n        &lt;form data-splade-id=\&quot;XqNj9verp8t2DvvS\&quot; v-bind=\&quot;form.$attrs\&quot; @submit.prevent=\&quot;form.submit\&quot; method=\&quot;POST\&quot;&gt;\n            &lt;fieldset v-bind:disabled=\&quot;form.processing\&quot; &gt;\n                &lt;SpladeFile\n    :form=\&quot;form\&quot;\n    :field=\&quot;&#039;avatar2&#039;\&quot;\n    :multiple=\&quot;false\&quot;\n    :placeholder=\&quot;&#039;Drag and drop your files or Browse...&#039;\&quot;\n    :filepond=\&quot;JSON.parse(&#039;{\\u0022allowReorder\\u0022:true,\\u0022itemInsertLocation\\u0022:\\u0022after\\u0022,\\u0022labelIdle\\u0022:\\u0022Drag and drop your files or Browse...\\u0022,\\u0022multiple\\u0022:false,\\u0022name\\u0022:\\u0022file\\u0022}&#039;)\&quot;\n    :js-filepond-options=\&quot;{}\&quot;\n    :server=\&quot;&#039;http:\\\/\\\/splade-examples.test\\\/_splade\\\/fileUpload&#039;\&quot;\n    :preview=\&quot;true\&quot;\n    :accept=\&quot;[]\&quot;\n    :existing-suffix=\&quot;&#039;_existing&#039;\&quot;\n    :order-suffix=\&quot;&#039;_order&#039;\&quot;\n    :min-file-size=\&quot;false\&quot;\n    :max-file-size=\&quot;false\&quot;\n    :min-image-width=\&quot;false\&quot;\n    :max-image-width=\&quot;false\&quot;\n    :min-image-height=\&quot;false\&quot;\n    :max-image-height=\&quot;false\&quot;\n    :min-image-resolution=\&quot;false\&quot;\n    :max-image-resolution=\&quot;false\&quot;\n    v-on:start-uploading=\&quot;form.$startUploading\&quot;\n    v-on:stop-uploading=\&quot;form.$stopUploading\&quot;\n    :dusk=\&quot;null\&quot;\n    \n&gt;\n    &lt;template #default=\&quot;file\&quot;&gt;\n        &lt;label class=\&quot;block\&quot;&gt;\n            \n                            &lt;input name=\&quot;avatar2\&quot; type=\&quot;file\&quot; data-validation-key=\&quot;avatar2\&quot;\n                \/&gt;\n            \n                    &lt;\/label&gt;\n\n        \n        &lt;p class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; v-if=\&quot;form.hasError(&#039;avatar2&#039;)\&quot; v-bind=\&quot;form.$errorAttributes(&#039;avatar2&#039;)\&quot; \/&gt;    &lt;\/template&gt;\n&lt;\/SpladeFile&gt;\r\n                &lt;SpladeInput\n    class=\&quot;\&quot;\n    :flatpickr=\&quot;false\&quot;\n    :js-flatpickr-options=\&quot;{}\&quot;\n    v-model=\&quot;form.remote_url\&quot;\n    #default=\&quot;inputScope\&quot;\n&gt;\n    &lt;label class=\&quot;block\&quot;&gt;\n        &lt;span class=\&quot;block mb-1 text-gray-700 font-sans\&quot;&gt;Remore URL&lt;\/span&gt;\n        &lt;div class=\&quot;flex rounded-md border border-gray-300 shadow-sm\&quot;&gt;\n            \n            &lt;input v-model=\&quot;form.remote_url\&quot; class=\&quot;block w-full border-0 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-50 disabled:bg-gray-50 disabled:cursor-not-allowed rounded-md\&quot; name=\&quot;remote_url\&quot; type=\&quot;text\&quot; data-validation-key=\&quot;remote_url\&quot;\n            \/&gt;\n\n                    &lt;\/div&gt;\n    &lt;\/label&gt;\n\n        &lt;p class=\&quot;text-red-600 text-sm mt-2 font-sans\&quot; v-if=\&quot;form.hasError(&#039;remote_url&#039;)\&quot; v-bind=\&quot;form.$errorAttributes(&#039;remote_url&#039;)\&quot; \/&gt;&lt;\/SpladeInput&gt;\r\n                &lt;button class=\&quot;p-2 text-white bg-green-500 rounded-md\&quot; @click.prevent=\&quot;form.$addFile(&#039;avatar2&#039;, form.remote_url)\&quot;&gt; Add Remore URL&lt;\/button&gt;\n            &lt;\/fieldset&gt;\n        &lt;\/form&gt;\n    &lt;\/template&gt;\n&lt;\/SpladeForm&gt;        &lt;\/div&gt;\n            &lt;\/div&gt;\n        &lt;\/div&gt;\n    &lt;\/div&gt;\n&lt;\/div&gt;\n    &lt;\/main&gt;\n&lt;\/div&gt;\n&quot;" data-dynamics="[]" data-splade="{&quot;head&quot;:{&quot;canonical&quot;:&quot;http:\/\/splade-examples.test\/practicando\/files?fetch=https%3A%2F%2F3.bp.blogspot.com%2F-xXi6Ka0rvDc%2FUaWrAOq7SvI%2FAAAAAAAACRk%2FeVqHtWL8NhM%2Fs1600%2FDeep%252BSpace%252BImages-712306.jpg&quot;,&quot;meta&quot;:[{&quot;name&quot;:&quot;description&quot;,&quot;content&quot;:&quot;Splade provides a super easy way to build Single Page Applications (SPA) using standard Laravel Blade templates, enhanced with renderless Vue 3 components.&quot;},{&quot;name&quot;:&quot;keywords&quot;,&quot;content&quot;:&quot;Laravel, Splade&quot;}],&quot;title&quot;:&quot;Laravel&quot;},&quot;modal&quot;:null,&quot;modalTarget&quot;:null,&quot;flash&quot;:{},&quot;errors&quot;:{},&quot;shared&quot;:{},&quot;toasts&quot;:[],&quot;preventRefresh&quot;:false,&quot;preserveScroll&quot;:false,&quot;lazy&quot;:false,&quot;rehydrate&quot;:false,&quot;persistentLayout&quot;:null}">
+<div class="min-h-screen bg-gray-100">
+    <SpladeData 
+     :default="{ open: false }"  :remember="false" :local-storage="false">
+            <template #default="data">
+            <nav class="bg-white border-b border-gray-100">
+        <!-- Primary Navigation Menu -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex w-full">
+                    <!-- Logo -->
+                    <div class="shrink-0 flex items-center">
+                        <a href="http://splade-examples.test">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="517.95 321.25 77.43 77.4" class="block h-9 w-auto">
+    <path style="fill:#b940a2;stroke-width:.46399999" d="M556.66 322.09c-.007 0-2.837 5.648-6.288 12.551a8640.808 8640.808 0 0 0-6.276 12.564c0 .007 5.654.013 12.564.013s12.564-.006 12.564-.013c0-.007-2.824-5.66-6.275-12.564a4042.98 4042.98 0 0 0-6.288-12.551zm0 27.062h-13.544l-6.772 13.544-6.772 13.544h54.176l-6.774-13.544-6.77-13.544zm0 29.023h-28.056l-5.32 10.639-5.322 10.644h77.395l-5.322-10.644-5.322-10.639z" transform="translate(0 -.821)"></path>
+</svg>                        </a>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex w-full">
+                        <div class="flex flex-row items-center justify-between w-full">
+                            <div class="space-x-3">
+                                                                <Link class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out" href="http://splade-examples.test">
+    Home
+</Link>
+        
+                                <Link class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out" href="http://splade-examples.test/docs">
+    Documentation
+</Link>
+                                                                <Link class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out" href="http://splade-examples.test/practicando">
+    Practices
+</Link>
+                            </div>
+                            <div>
+                                                                <div class="hidden px-6 py-4 sm:block">
+                                                                        <Link href="http://splade-examples.test/login"
+                                        class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</Link>
+        
+                                                                        <Link href="http://splade-examples.test/register"
+                                        class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</Link>
+                                                                                                        </div>
+                                                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button @click="data.open = ! data.open"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path v-bind:class="{'hidden': data.open, 'inline-flex': ! data.open }"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                            <path v-bind:class="{'hidden': ! data.open, 'inline-flex': data.open }"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsive Navigation Menu -->
+        <div v-bind:class="{'block': data.open, 'hidden': ! data.open }" class="sm:hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <Link class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out" href="http://splade-examples.test">
+    Home
+</Link>
+
+                <Link class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out" href="http://splade-examples.test/docs">
+    Documentation
+</Link>
+                            </div>
+        </div>
+    </nav>
+        </template>
+    </SpladeData>
+    <!-- Page Heading -->
+    
+    <!-- Page Content -->
+    <main>
+        <div class="py-6">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
+                <p class="text-2xl">
+            Vista para practicar Files
+        </p>
+        <div class="border-b-[1px] border-slate-300 mb-5">&nbsp;</div> 
+        <div>
+            <label for="">Multiple Files</label>
+            <SpladeForm label="Multiple Documents"
+     :default="JSON.parse('{\u0022documents\u0022:[]}')"     :scroll-on-error="true"
+    :splade-id="'DWxYdRdSrcFUDk0O'"
+    :submit-on-change="false"
+    :escape-validation-messages="true"
+    :preserve-scroll="false"
+    :background="false"
+    :debounce="0"
+    :accept-header="'text\/html, application\/xhtml+xml'"
+>
+    <template #default="form">
+        <form data-splade-id="DWxYdRdSrcFUDk0O" v-bind="form.$attrs" @submit.prevent="form.submit" method="POST">
+            <fieldset v-bind:disabled="form.processing" >
+                <SpladeFile
+    :form="form"
+    :field="'documents'"
+    :multiple="true"
+    :placeholder="'Browse...'"
+    :filepond="false"
+    :js-filepond-options="{}"
+    :server="false"
+    :preview="false"
+    :accept="[]"
+    :existing-suffix="'_existing'"
+    :order-suffix="'_order'"
+    :min-file-size="false"
+    :max-file-size="false"
+    :min-image-width="false"
+    :max-image-width="false"
+    :min-image-height="false"
+    :max-image-height="false"
+    :min-image-resolution="false"
+    :max-image-resolution="false"
+    v-on:start-uploading="form.$startUploading"
+    v-on:stop-uploading="form.$stopUploading"
+    :dusk="null"
+    
+>
+    <template #default="file">
+        <label class="block">
+            
+                            <a @submit.prevent
+                    class="inline-block py-2 px-3 rounded-md border border-gray-300 shadow-sm bg-white hover:bg-gray-100 relative cursor-pointer font-medium text-gray-700 text-sm focus:outline-none focus:ring focus:ring-opacity-50 focus:border-indigo-300 focus:ring-indigo-200 text-center">
+
+                                            Choose Multiple Files
+                    
+                    <input @change="file.handleFileInput" name="documents[]" multiple="multiple" type="file" data-validation-key="documents" class="invisible absolute inset-0 w-full h-full disabled:opacity-50"
+                                            />
+                </a>
+            
+                    </label>
+
+                    <div class="mt-2 text-sm italic" v-if="file.filenames.length > 0">
+                <p v-for="(filename, key) in file.filenames" v-bind:key="key" v-text="filename" />
+            </div>
+        
+        <p class="text-red-600 text-sm mt-2 font-sans" v-if="form.hasError('documents')" v-bind="form.$errorAttributes('documents')" />    </template>
+</SpladeFile>
+            </fieldset>
+        </form>
+    </template>
+</SpladeForm>        </div>
+        
+        <div class="border-b-[1px] border-slate-300 mb-5">&nbsp;</div> 
+
+        <div>
+            <label for="">Select an image and showing its previwe</label>
+            <SpladeForm 
+     :default="{}"     :scroll-on-error="true"
+    :splade-id="'DOj0uvyTgwnQSPal'"
+    :submit-on-change="false"
+    :escape-validation-messages="true"
+    :preserve-scroll="false"
+    :background="false"
+    :debounce="0"
+    :accept-header="'text\/html, application\/xhtml+xml'"
+>
+    <template #default="form">
+        <form data-splade-id="DOj0uvyTgwnQSPal" v-bind="form.$attrs" @submit.prevent="form.submit" method="POST">
+            <fieldset v-bind:disabled="form.processing" >
+                <SpladeFile
+    :form="form"
+    :field="'avatar'"
+    :multiple="false"
+    :placeholder="'Browse...'"
+    :filepond="false"
+    :js-filepond-options="{}"
+    :server="false"
+    :preview="false"
+    :accept="[]"
+    :existing-suffix="'_existing'"
+    :order-suffix="'_order'"
+    :min-file-size="false"
+    :max-file-size="false"
+    :min-image-width="false"
+    :max-image-width="false"
+    :min-image-height="false"
+    :max-image-height="false"
+    :min-image-resolution="false"
+    :max-image-resolution="false"
+    v-on:start-uploading="form.$startUploading"
+    v-on:stop-uploading="form.$stopUploading"
+    :dusk="null"
+    
+>
+    <template #default="file">
+        <label class="block">
+            
+                            <a @submit.prevent
+                    class="inline-block py-2 px-3 rounded-md border border-gray-300 shadow-sm bg-white hover:bg-gray-100 relative cursor-pointer font-medium text-gray-700 text-sm focus:outline-none focus:ring focus:ring-opacity-50 focus:border-indigo-300 focus:ring-indigo-200 text-center">
+
+                                            Select an Image..
+                    
+                    <input @change="file.handleFileInput" name="avatar" type="file" data-validation-key="avatar" class="invisible absolute inset-0 w-full h-full disabled:opacity-50"
+                                            />
+                </a>
+            
+                    </label>
+
+        
+        <p class="text-red-600 text-sm mt-2 font-sans" v-if="form.hasError('avatar')" v-bind="form.$errorAttributes('avatar')" />    </template>
+</SpladeFile>                <img class="w-[50%]" v-if="form.avatar" :src="form.$fileAsUrl('avatar')" />
+            </fieldset>
+        </form>
+    </template>
+</SpladeForm>        </div>
+
+        <div class="border-b-[1px] border-slate-300 mb-5">&nbsp;</div> 
+
+        <div>
+            <label for="">A more stylize file selector</label>
+            <SpladeForm 
+     :default="{}"     :scroll-on-error="true"
+    :splade-id="'rdRWzvG4W48t5OzF'"
+    :submit-on-change="false"
+    :escape-validation-messages="true"
+    :preserve-scroll="false"
+    :background="false"
+    :debounce="0"
+    :accept-header="'text\/html, application\/xhtml+xml'"
+>
+    <template #default="form">
+        <form data-splade-id="rdRWzvG4W48t5OzF" v-bind="form.$attrs" @submit.prevent="form.submit" method="POST">
+            <fieldset v-bind:disabled="form.processing" >
+                <SpladeFile
+    :form="form"
+    :field="'avatar2'"
+    :multiple="false"
+    :placeholder="'You can Drop or select a file by clicking here'"
+    :filepond="JSON.parse('{\u0022allowReorder\u0022:true,\u0022itemInsertLocation\u0022:\u0022after\u0022,\u0022labelIdle\u0022:\u0022You can Drop or select a file by clicking here\u0022,\u0022multiple\u0022:false,\u0022name\u0022:\u0022file\u0022}')"
+    :js-filepond-options="{}"
+    :server="false"
+    :preview="false"
+    :accept="[]"
+    :existing-suffix="'_existing'"
+    :order-suffix="'_order'"
+    :min-file-size="false"
+    :max-file-size="false"
+    :min-image-width="false"
+    :max-image-width="false"
+    :min-image-height="false"
+    :max-image-height="false"
+    :min-image-resolution="false"
+    :max-image-resolution="false"
+    v-on:start-uploading="form.$startUploading"
+    v-on:stop-uploading="form.$stopUploading"
+    :dusk="null"
+    
+>
+    <template #default="file">
+        <label class="block">
+            
+                            <input name="avatar2" type="file" data-validation-key="avatar2"
+                />
+            
+                    </label>
+
+        
+        <p class="text-red-600 text-sm mt-2 font-sans" v-if="form.hasError('avatar2')" v-bind="form.$errorAttributes('avatar2')" />    </template>
+</SpladeFile>
+            </fieldset>
+        </form>
+    </template>
+</SpladeForm>        </div>
+        <div>
+            <label for="">Same as previous but with multiple selection</label>
+            <SpladeForm 
+     :default="JSON.parse('{\u0022avatars\u0022:[]}')"     :scroll-on-error="true"
+    :splade-id="'fRbXf0XBwEKOs51s'"
+    :submit-on-change="false"
+    :escape-validation-messages="true"
+    :preserve-scroll="false"
+    :background="false"
+    :debounce="0"
+    :accept-header="'text\/html, application\/xhtml+xml'"
+>
+    <template #default="form">
+        <form data-splade-id="fRbXf0XBwEKOs51s" v-bind="form.$attrs" @submit.prevent="form.submit" method="POST">
+            <fieldset v-bind:disabled="form.processing" >
+                <SpladeFile
+    :form="form"
+    :field="'avatars'"
+    :multiple="true"
+    :placeholder="'You can Drop or select Multiple files by clicking here'"
+    :filepond="JSON.parse('{\u0022allowReorder\u0022:true,\u0022itemInsertLocation\u0022:\u0022after\u0022,\u0022labelIdle\u0022:\u0022You can Drop or select Multiple files by clicking here\u0022,\u0022multiple\u0022:true,\u0022name\u0022:\u0022file\u0022}')"
+    :js-filepond-options="{}"
+    :server="false"
+    :preview="true"
+    :accept="JSON.parse('[\u0022image\\\/png\u0022]')"
+    :existing-suffix="'_existing'"
+    :order-suffix="'_order'"
+    :min-file-size="false"
+    :max-file-size="false"
+    :min-image-width="false"
+    :max-image-width="false"
+    :min-image-height="false"
+    :max-image-height="false"
+    :min-image-resolution="false"
+    :max-image-resolution="false"
+    v-on:start-uploading="form.$startUploading"
+    v-on:stop-uploading="form.$stopUploading"
+    :dusk="null"
+    
+>
+    <template #default="file">
+        <label class="block">
+            
+                            <input name="avatars[]" multiple="multiple" type="file" data-validation-key="avatars"
+                />
+            
+                    </label>
+
+        
+        <p class="text-red-600 text-sm mt-2 font-sans" v-if="form.hasError('avatars')" v-bind="form.$errorAttributes('avatars')" />    </template>
+</SpladeFile>
+            </fieldset>
+        </form>
+    </template>
+</SpladeForm>        </div>
+
+        <div class="border-b-[1px] border-slate-300 mb-5">&nbsp;</div> 
+        <div>
+            <label for="">Adding files from a remote url</label>
+            <SpladeForm 
+     :default="{}"     :scroll-on-error="true"
+    :splade-id="'XqNj9verp8t2DvvS'"
+    :submit-on-change="false"
+    :escape-validation-messages="true"
+    :preserve-scroll="false"
+    :background="false"
+    :debounce="0"
+    :accept-header="'text\/html, application\/xhtml+xml'"
+>
+    <template #default="form">
+        <form data-splade-id="XqNj9verp8t2DvvS" v-bind="form.$attrs" @submit.prevent="form.submit" method="POST">
+            <fieldset v-bind:disabled="form.processing" >
+                <SpladeFile
+    :form="form"
+    :field="'avatar2'"
+    :multiple="false"
+    :placeholder="'Drag and drop your files or Browse...'"
+    :filepond="JSON.parse('{\u0022allowReorder\u0022:true,\u0022itemInsertLocation\u0022:\u0022after\u0022,\u0022labelIdle\u0022:\u0022Drag and drop your files or Browse...\u0022,\u0022multiple\u0022:false,\u0022name\u0022:\u0022file\u0022}')"
+    :js-filepond-options="{}"
+    :server="'http:\/\/splade-examples.test\/_splade\/fileUpload'"
+    :preview="true"
+    :accept="[]"
+    :existing-suffix="'_existing'"
+    :order-suffix="'_order'"
+    :min-file-size="false"
+    :max-file-size="false"
+    :min-image-width="false"
+    :max-image-width="false"
+    :min-image-height="false"
+    :max-image-height="false"
+    :min-image-resolution="false"
+    :max-image-resolution="false"
+    v-on:start-uploading="form.$startUploading"
+    v-on:stop-uploading="form.$stopUploading"
+    :dusk="null"
+    
+>
+    <template #default="file">
+        <label class="block">
+            
+                            <input name="avatar2" type="file" data-validation-key="avatar2"
+                />
+            
+                    </label>
+
+        
+        <p class="text-red-600 text-sm mt-2 font-sans" v-if="form.hasError('avatar2')" v-bind="form.$errorAttributes('avatar2')" />    </template>
+</SpladeFile>
+                <SpladeInput
+    class=""
+    :flatpickr="false"
+    :js-flatpickr-options="{}"
+    v-model="form.remote_url"
+    #default="inputScope"
+>
+    <label class="block">
+        <span class="block mb-1 text-gray-700 font-sans">Remore URL</span>
+        <div class="flex rounded-md border border-gray-300 shadow-sm">
+            
+            <input v-model="form.remote_url" class="block w-full border-0 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-50 disabled:bg-gray-50 disabled:cursor-not-allowed rounded-md" name="remote_url" type="text" data-validation-key="remote_url"
+            />
+
+                    </div>
+    </label>
+
+        <p class="text-red-600 text-sm mt-2 font-sans" v-if="form.hasError('remote_url')" v-bind="form.$errorAttributes('remote_url')" /></SpladeInput>
+                <button class="p-2 text-white bg-green-500 rounded-md" @click.prevent="form.$addFile('avatar2', form.remote_url)"> Add Remore URL</button>
+            </fieldset>
+        </form>
+    </template>
+</SpladeForm>        </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+</div>
+
+</div>
+    </body>
+</html>
